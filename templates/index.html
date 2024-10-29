@@ -1,0 +1,21 @@
+<html>
+    {% load static %}
+    <head>
+        <link rel="stylesheet" href="{% static 'index.css' %}">
+    </head>
+    <body>
+        <div class="'bg-container pt-3">
+            <h1>Traffic Light</h1>
+            <div class="d-flex flex-row">
+                <div class="d-flex flex-column"> 
+                    <button class="button" id="stopButton " onclick="lightRed()">stop</button>
+                    <button class="button" id="readyButton" onclick="lightYellow()">ready</button>
+                    <button class="button" id="goButton" onclick="lightGreen()">go</button>
+                </div>
+                <div class="card-container">
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
